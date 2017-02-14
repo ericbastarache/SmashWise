@@ -9,9 +9,14 @@
 @lightBlue: #2D69FF;
 
 @pad-60: 3.750em;
+@pad-30: 1.875em !important;
 
 @montserrat: 'Montserrat', sans-serif;
 @roboto: 'Roboto', sans-serif;
+
+* {
+  box-sizing: border-box;
+}
 
 html {
   position: relative;
@@ -19,8 +24,7 @@ html {
 }
 
 body {
-  background-color: @black;
-  margin-bottom: 60px;
+  margin-bottom: 3.750em;
 }
 
 nav.navbar-smashwise {
@@ -54,6 +58,23 @@ nav.navbar-smashwise {
   padding-bottom: @pad-60;
 }
 
+.pdt30 {
+  padding-top: @pad-30;
+}
+
+.pdbt30 {
+  padding-bottom: @pad-30;
+}
+
+.no-pad {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.no-margin {
+  margin: 0;
+}
+
 div.jumbotron {
   padding-top: 0;
   padding-bottom: 0;
@@ -68,9 +89,9 @@ div.jumbotron-main {
 
   div.hero-holder {
     position: absolute;
-    top: 30%;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%,-70%);
+    transform: translate(-50%,-50%);
     color: @white;
 
   }
@@ -82,20 +103,40 @@ div.jumbotron-main {
   }
 }
 
-div#intro-wrapper {
-  background-color: @section-black;
+section#about {
+  div#intro-wrapper {
+    background-color: @section-black;
 
+    h2 {
+      font-family: @montserrat;
+      color: @white;
+      text-transform: uppercase;
+    }
 
-  h2 {
-    font-family: @montserrat;
-    color: @white;
-    text-transform: uppercase;
+    h3 {
+      font-family: @roboto;
+      font-weight: 100;
+      font-size: 1.563em;
+      color: @font-color;
+
+      strong {
+        font-weight: 300;
+      }
+    }
   }
+  div#about-title {
+    position: relative;
+    background-color: @slate;
 
-  h3 {
-    font-family: @roboto;
-    font-weight: 100;
-    font-size: 1.563em;
-    color: @font-color;
+    h4 {
+      letter-spacing: 0.125em;
+      font-size: 0.875em;
+      font-weight: 700;
+      font-family: @montserrat;
+      color: @white;
+    }
+  }
+  div#about-smashwise {
+    background-color: @section-black;
   }
 }
