@@ -54,15 +54,18 @@ nav.navbar-smashwise {
   padding-bottom: @pad-60;
 }
 
-.jumbotron {
+div.jumbotron {
   padding-top: 0;
   padding-bottom: 0;
+  margin-bottom: 0;
 }
 
 div.jumbotron-main {
   background: transparent;
   position: relative;
   top: 0;
+  font-family: @roboto;
+
   div.hero-holder {
     position: absolute;
     top: 30%;
@@ -70,14 +73,8 @@ div.jumbotron-main {
     transform: translate(-50%,-70%);
     color: @white;
 
-    h1 {
-
-    }
-
-    p {
-
-    }
   }
+
   div#particles-js {
     background: linear-gradient(to right, #400078, #5500A0, #4A008C);
     background-position: 50% 50%;
