@@ -1,8 +1,17 @@
 @navBlack: #1D1D1D;
 @black: #000;
+@section-black: #1B1B1B;
+@odd-section-black: #1E1E1E;
 @offWhite: #F8F8F8;
+@slate: #333333;
+@font-color: #A5A5A5;
 @white: #fff;
 @lightBlue: #2D69FF;
+
+@pad-60: 3.750em;
+
+@montserrat: 'Montserrat', sans-serif;
+@roboto: 'Roboto', sans-serif;
 
 html {
   position: relative;
@@ -17,7 +26,8 @@ body {
 nav.navbar-smashwise {
   background-color: @navBlack;
   border-radius: 0;
-
+  margin-bottom: 0;
+  font-family: @montserrat;
   a.navbar-brand {
     color: @offWhite;
 
@@ -36,7 +46,59 @@ nav.navbar-smashwise {
   }
 }
 
-#particles-js {
-  width: 100%;
-  height: auto;
+.pdt60 {
+  padding-top: @pad-60;
+}
+
+.pdb60 {
+  padding-bottom: @pad-60;
+}
+
+.jumbotron {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+div.jumbotron-main {
+  background: transparent;
+  position: relative;
+  top: 0;
+  div.hero-holder {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-70%);
+    color: @white;
+
+    h1 {
+
+    }
+
+    p {
+
+    }
+  }
+  div#particles-js {
+    background: linear-gradient(to right, #400078, #5500A0, #4A008C);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+  }
+}
+
+div#intro-wrapper {
+  background-color: @section-black;
+
+
+  h2 {
+    font-family: @montserrat;
+    color: @white;
+    text-transform: uppercase;
+  }
+
+  h3 {
+    font-family: @roboto;
+    font-weight: 100;
+    font-size: 1.563em;
+    color: @font-color;
+  }
 }
